@@ -1,0 +1,19 @@
+{
+	"meetings" : [{
+	"id" : "1",
+	"Subject" : "Temp",
+	"StartTIme" : "10:00AM",
+	"EndTIme" : "2:00PM"
+	},
+	{
+	"id" : "2",
+	"Subject" : "Design",
+	"StartTIme" : "11:00AM",
+	"EndTIme" : "3:00PM"
+	},{
+	"id" : "3",
+	"Subject" : "Development",
+	"StartTIme" : "12:00AM",
+	"EndTIme" : "5:00PM"
+	}] 
+}

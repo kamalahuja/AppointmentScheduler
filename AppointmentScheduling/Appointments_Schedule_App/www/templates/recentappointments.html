@@ -1,0 +1,9 @@
+<ion-view view-title="MyAppointments">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="appointment in appointments" href="#/app/playlists/{{appointment.id}}">
+        {{appointment.subject}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
