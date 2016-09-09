@@ -1,3 +1,4 @@
+'use strict';
 angular.module('AppointmentScheduler.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
@@ -53,4 +54,43 @@ angular.module('AppointmentScheduler.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+.controller('AppSchedulerController', ['$scope', 'appointmentsFactory', 'baseURL', function($scope, appointmentsFactory, baseURL){
+    $scope.baseURL = baseURL;
+    $scope.appointments = appointmentsFactory.query().$promise.then(
+                            function(response){
+                                $scope.appointments = response;  
+                            },
+                            function(response) {
+                                console.log('Error happened while retrieving response');
+                            }
+                        );;
+    console.log($scope.appointments);
+}])
+.controller('HomeController',['$scope', function($scope){
+        $scope.tab = 1;
+    $scope.displayText = "My Schedule";
+      $scope.select = function(setTab) {
+                $scope.tab = setTab;
+                if (setTab === 1) {
+                    $scope.displayText = "My Schedule";
+                }
+                else if (setTab === 2) {
+                    $scope.displayText = "My Connections";
+                }
+                else if (setTab === 3) {
+                    $scope.displayText = "My Offers";
+                }
+                else if (setTab === 4) {
+                    $scope.displayText = "Other topics";
+                }
+                else {
+                    $scope.displayText = "";
+                }
+            };
+
+            $scope.isSelected = function (checkTab) {
+                return ($scope.tab === checkTab);
+            };
+}])
+;

@@ -2,18 +2,30 @@
 	"meetings" : [{
 	"id" : "1",
 	"Subject" : "Temp",
+    "Details" : "To discuss temporary arrangements",
 	"StartTIme" : "10:00AM",
-	"EndTIme" : "2:00PM"
+	"EndTIme" : "2:00PM",
+        "Location" : "Edison",
+    "PersonName" : "Tim Cook",
+    "image" : "profile.png"
 	},
 	{
 	"id" : "2",
 	"Subject" : "Design",
+    "Details" : "To discuss Design",
 	"StartTIme" : "11:00AM",
-	"EndTIme" : "3:00PM"
+	"EndTIme" : "3:00PM",
+        "Location" : "Iselin",
+    "PersonName" : "Tim Cook",
+    "image" : "profile.png"
 	},{
 	"id" : "3",
 	"Subject" : "Development",
+        "Details" : "To discuss Dev Status",
 	"StartTIme" : "12:00AM",
-	"EndTIme" : "5:00PM"
+        "Location" : "Metropark",
+	"EndTIme" : "5:00PM",
+        "PersonName" : "Tim Cook",
+        "image" : "profile.png"
 	}] 
 }

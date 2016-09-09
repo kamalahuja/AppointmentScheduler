@@ -1,5 +1,18 @@
 <ion-view view-title="MyAppointmentScheduler">
   <ion-content>
     <h1>My Appointment Scheduler - Home</h1>
+        <h2>{{displayText}}</h2>
   </ion-content>
+    <div class="tabs-striped tabs-color-royal">
+    <ul class="tabs">
+        <li ng-class="{active:isSelected(1)}" class="tab-item">
+            <a ng-click="select(1)">Schedule</a></li>
+        <li ng-class="{active:isSelected(2)}" class="tab-item">
+            <a ng-click="select(2)">Connections</a></li>
+        <li ng-class="{active:isSelected(3)}" class="tab-item">
+            <a ng-click="select(3)">Offers</a></li>
+        <li ng-class="{active:isSelected(4)}" class="tab-item">
+            <a  ng-click="select(4)">Notifications</a></li>
+    </ul>
+  </div>
 </ion-view>

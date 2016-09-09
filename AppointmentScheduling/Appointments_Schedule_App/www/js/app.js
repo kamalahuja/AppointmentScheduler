@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('AppointmentScheduler', ['ionic', 'AppointmentScheduler.controllers'])
+angular.module('AppointmentScheduler', ['ionic', 'AppointmentScheduler.controllers', 'AppointmentScheduler.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -36,7 +36,9 @@ angular.module('AppointmentScheduler', ['ionic', 'AppointmentScheduler.controlle
     url: '/home',
     views: {
       'mainContent': {
-        templateUrl: 'templates/home.html'
+        templateUrl: 'templates/home.html',
+          controller: 'HomeController'
+          
       }
     }
   })
@@ -64,7 +66,7 @@ angular.module('AppointmentScheduler', ['ionic', 'AppointmentScheduler.controlle
       views: {
         'mainContent': {
           templateUrl: 'templates/recentappointments.html',
-          controller: 'AppSchedulerCtrl'
+          controller: 'AppSchedulerController'
         }
       }
     })

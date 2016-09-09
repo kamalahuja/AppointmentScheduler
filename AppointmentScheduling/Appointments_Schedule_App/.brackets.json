@@ -1,6 +1,10 @@
 {
     "jscodehints.detectedExclusions": [
         "/Users/kamalahuja/Documents/KAMAL/Vishal/AppointmentScheduling/Appointments_Schedule_App/www/lib/ionic/js/ionic.min.js",
-        "/Users/kamalahuja/Documents/KAMAL/Vishal/AppointmentScheduling/Appointments_Schedule_App/www/lib/ionic/js/ionic.js"
+        "/Users/kamalahuja/Documents/KAMAL/Vishal/AppointmentScheduling/Appointments_Schedule_App/www/lib/ionic/js/ionic.js",
+        "/Users/kamalahuja/Documents/KAMAL/Vishal/AppointmentScheduling/Appointments_Schedule_App/www/js/app.js",
+        "/Users/kamalahuja/Documents/KAMAL/Vishal/AppointmentScheduling/Appointments_Schedule_App/www/js/controller_n.js",
+        "/Users/kamalahuja/Documents/KAMAL/Vishal/AppointmentScheduling/Appointments_Schedule_App/www/js/controllers.js",
+        "/Users/kamalahuja/Documents/KAMAL/Vishal/AppointmentScheduling/Appointments_Schedule_App/www/js/services copy.js"
     ]
 }

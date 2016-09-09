@@ -1,8 +1,20 @@
 <ion-view view-title="MyAppointments">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="appointment in appointments" href="#/app/playlists/{{appointment.id}}">
-        {{appointment.subject}}
+      <ion-item ng-repeat="appointment in appointments" href="#/app/playlists/{{appointment.id}}">  
+          <div class="card">
+            <div class="item item-divider">
+                {{appointment.Subject}}
+                <span class="badge badge-assertive">Important</span>
+            </div>
+            <div class="item item-thumbnail-left item-text-wrap">
+               <img ng-src="{{baseURL+appointment.image}}" alt="{{appointment.PersonName}}">
+               <h2>{{appointment.Details}}
+                 <span class="badge">{{appointment.id}}</span>
+                </h2>
+                <p>Location: {{appointment.Location}}</p>
+            </div>
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>
